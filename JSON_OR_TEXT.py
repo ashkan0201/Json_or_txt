@@ -2,3 +2,10 @@
 
 # Use this library to code.
 import json5
+
+"""
+This function is supposed to be a function inside 
+it to check what format the file is in order to read it.
+"""
+def CHECKING(file):
+    pass
