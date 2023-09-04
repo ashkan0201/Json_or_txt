@@ -34,4 +34,9 @@ def CHECKING(file):
 # Create a decorator to connect the open_file function to checking.
 @CHECKING
 def OPEN_FILEING():
-    pass
+    # Open the file and send it to the checking function for checking.
+    open_file = open("FILE TEXT OR JSON")
+    return open_file
+
+# Run.
+OPEN_FILEING()
