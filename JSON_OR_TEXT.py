@@ -30,3 +30,8 @@ def CHECKING(file):
             return json_data
 
     return JSON_OR_TEXT
+
+# Create a decorator to connect the open_file function to checking.
+@CHECKING
+def OPEN_FILEING():
+    pass
