@@ -14,10 +14,19 @@ def CHECKING(file):
         try:
             # cheking for file is json or it is not.
             json_data = json5.load(file())
+        #If it is not json, it will receive an error and it will be redirected to except.
         except:
-            pass
+            try:
+                # Checking whether the file is text or not.
+                text_data = file().read()
+            # If there is no text file, it will be directed to except.
+            except:
+                print("Such a file is not supported")
+            else:
+                # If file is text.
+                print(text_data)
         else:
-            # if file is json.
+            # If file is json.
             return json_data
 
     return JSON_OR_TEXT
