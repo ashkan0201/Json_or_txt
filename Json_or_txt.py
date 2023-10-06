@@ -24,7 +24,7 @@ def CHECKING(file):
                 print("Such a file is not supported")
             else:
                 # If file is text.
-                print(text_data)
+                return text_data
         else:
             # If file is json.
             return json_data
